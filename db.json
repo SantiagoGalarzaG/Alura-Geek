@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "id": "0c6b",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU_OM0G_BwsQC0VERJTULSeLYvw5Wssudxcg&s",
+      "nombre": "xbox 360",
+      "precio": "500.000"
+    },
+    {
+      "id": "ca32",
+      "imagen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/118315065_01/w=800,h=800,fit=pad",
+      "nombre": "Nintendo",
+      "precio": "1'600.000"
+    },
+    {
+      "id": "5161",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DnRCrb9zX8ELYZ7Dpyyss_oD7moc4oLGWg&s",
+      "nombre": "fc25",
+      "precio": "300.000"
+    },
+    {
+      "id": "3fd9",
+      "imagen": "https://juegosdigitalescolombia.com/files/images/productos/1644709199-halo-infinite-xbox-series-xs.jpg",
+      "nombre": "Halo",
+      "precio": "250.000"
+    },
+    {
+      "id": "7752",
+      "imagen": "https://m.media-amazon.com/images/I/91Eag3e-J2L._AC_UF1000,1000_QL80_.jpg",
+      "nombre": "GTA V",
+      "precio": "200.000"
+    }
+  ]
+}

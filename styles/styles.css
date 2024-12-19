@@ -1,0 +1,205 @@
+:root{
+    --color-primary: #FFFFFF;
+    --color-secondary: #5300C8;
+    --color-tertiary: #03318C;
+    --color-cuartiary: #D6D6D6;
+    --color-quintiary: #000000;
+    --Press-Start-2P:"Press Start 2P", system-ui;
+    --IBM-Plex-Mono:"IBM Plex Mono", monospace;
+}
+/* header */
+.header{
+background-color: var(--color-secondary);
+text-align: center;
+display: flex;
+justify-content: center;
+font-family: var(--Press-Start-2P);
+font-size: 24px;
+color: var(--color-primary);
+border-bottom: var(--color-cuartiary) 6px solid;
+padding: 10px;
+}
+
+.contenido{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+
+}
+.contenido__productos{
+    width: 50%;
+    margin-left: 40px;
+}
+
+.contenido__titulo{
+    font-family: var(--Press-Start-2P);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.targetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 20px;
+    box-shadow: -8px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px 0px 15px 15px; /* Arriba, derecha, abajo, izquierda */
+}
+.card{
+    background-color: var(--color-secondary);
+    border: var(--color-quintiary) 4px solid;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.card__imagen{
+    width: 176px;
+    height: 176px;
+    object-fit: fill;    
+}
+.card-container--info{
+    font-family: var(--IBM-Plex-Mono);
+    color: var(--color-primary);
+    margin: 0;
+}
+.card-container--info p{
+    margin-bottom: 0;
+}
+.card-container--value{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--IBM-Plex-Mono);
+    color: var(--color-primary);
+    font-weight: 900;
+
+}
+.card-container--value img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.contenido__agregar {
+    width: 40%;
+    padding: 20px;
+}
+
+
+/* Estilos para los inputs */
+input[type="text"],
+input[type="number"],
+input[type="url"] {
+    width: 90%;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--color-tertiary);
+    border-radius: 25px;
+    font-size: 20px;
+    outline: none;
+    color: var(--color-tertiary);
+    font-family: var(--IBM-Plex-Mono);
+    font-weight: bold;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+    width: 40%;
+    height: 55px;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--color-tertiary);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    font-family: var(--IBM-Plex-Mono);
+    
+}
+
+
+/* Botón LIMPIAR */
+input[type="reset"] {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    border: var(--color-tertiary) 3px solid;
+
+}
+
+/* Hover efecto */
+input[type="submit"]:hover {
+    background-color: #000080;
+}
+
+input[type="reset"]:hover {
+    background-color: var(--color-cuartiary);
+}
+/* Placeholder styles */
+::placeholder {
+    font-family: var(--IBM-Plex-Mono);
+    color: var(--color-tertiary);
+}
+
+.footer{
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.4);
+}
+.footer__nombre{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: var(--IBM-Plex-Mono);
+}
+
+.footer__titulo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: var(--Press-Start-2P);
+    font-size: 24px;
+    color: var(--color-primary);
+}
+.cosa{
+    font-weight: 200;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus {
+    border-color: var(--color-secondary); /* Cambio de color */
+    box-shadow: 0 0 8px var(--color-secondary);
+}
+
+@media(max-width:950px) {
+    .contenido{
+        flex-direction: column;
+    }
+    .contenido__productos,
+    .contenido__agregar{
+        width: 95%;
+        align-items: center;
+    }
+    .contenido__agregar {
+        order: -1;
+    }
+
+    
+}
